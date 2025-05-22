@@ -1,0 +1,174 @@
+.mandatory {
+    color: #dc3545;
+
+}
+
+label {
+    color: #0043ff;
+}
+
+.input-group {
+    position: relative;
+
+}
+
+.input-group-addon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #0043ff;
+    width: 35px;
+    height: 37px;
+}
+
+.fa {
+    position: relative;
+    top: 5px;
+    left: 9px
+}
+
+.modal-header .close {
+    padding: 0;
+}
+
+.arrow-left {
+    height: 30px;
+}
+
+/* Form Validation  */
+.custom-select.form-control,
+.custom-select.form-control:focus,
+.was-validated .custom-select.form-control:invalid:focus {
+    position: relative;
+    z-index: 2;
+    background: url('caret.svg') no-repeat 210px center;
+    padding-right: 3.75rem;
+}
+
+.custom-select.form-control,
+.custom-select.form-control:focus,
+.was-validated .custom-select.form-control:invalid:focus {
+    padding-right: 3.75rem;
+}
+
+.caret {
+    width: 37px;
+    height: 27px;
+    position: absolute;
+    z-index: 1;
+    top: 38px;
+    right: 20px;
+    background-color: blue;
+
+}
+
+.form-style .form-control.is-invalid,
+.was-validated .form-control:invalid {
+    background-image: none;
+    border-color: #cc3736;
+}
+
+.form-style .form-group .invalid-feedback {
+    margin: 5px 0 0 0;
+    padding: 0 10px;
+    font-size: 1rem;
+    color: #cc3736;
+    text-align: left;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    border: 0.25rem solid #cc3736;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid,
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus {
+    background: none;
+    box-shadow: none;
+    border: 0.25rem solid #cc3736;
+}
+
+.form-control.is-valid,
+.was-validated .form-control:valid {
+    background: none;
+    border-color: #687583;
+}
+
+.was-validated .custom-select:valid~.caret {
+    border-color: #687583;
+}
+
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus,
+.custom-select.is-valid:focus,
+.was-validated .custom-select:valid:focus,
+.custom-control-input.is-valid~.custom-control-label::before,
+.was-validated .custom-control-input:valid~.custom-control-label::before {
+    border-color: #687583;
+    box-shadow: none;
+}
+
+.custom-control-input.is-valid:checked~.custom-control-label::before,
+.was-validated .custom-control-input:valid:checked~.custom-control-label::before,
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: #fff;
+    border: 0.125rem solid #5b86b3;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    background: #5b86b3;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    left: -1.25rem;
+    top: 0.25rem;
+    height: 0.875rem;
+    width: 0.875rem;
+}
+
+.custom-control-input:focus~.custom-control-label::before,
+.custom-control-input.is-valid:focus~.custom-control-label::before,
+.was-validated .custom-control-input:valid:focus~.custom-control-label::before {
+    box-shadow: none;
+}
+
+.custom-control-input.is-invalid~.custom-control-label::before,
+.was-validated .custom-control-input:invalid~.custom-control-label::before {
+    border: 0.25rem solid #cc3736;
+}
+
+.custom-select:focus~.caret {
+    border-color: #5b86b3;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .custom-select.form-control,
+    .custom-select.form-control:focus,
+    .was-validated .custom-select.form-control:invalid:focus {
+
+        background-position: 403px center;
+
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .modal-header .close {
+        padding-left: 25px;
+
+    }
+
+    .modal-dialog {
+        max-width: 1200px;
+        width: 1200px
+    }
+
+    .custom-select.form-control,
+    .custom-select.form-control:focus,
+    .was-validated .custom-select.form-control:invalid:focus {
+        background-position: 230px center;
+    }
+}
